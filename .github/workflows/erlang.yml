@@ -9,4 +9,4 @@ jobs:
         id: rebar3
         uses: fredyouhanaie/actions/erlang@main
         with:
-          - command: version
+          command: version
