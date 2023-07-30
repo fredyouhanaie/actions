@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Erlang action step
         id: rebar3
-        uses: fredyouhanaie/actions/erlang@main
+        uses: fredyouhanaie/actions/erlang/latest@main
         with:
           command: version
