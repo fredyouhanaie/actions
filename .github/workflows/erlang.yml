@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  erlang_job:
+    runs-on: ubuntu-latest
+    name: A job to run erlang/rebar3
+    steps:
+      - name: Erlang action step
+        id: rebar3
+        uses: fredyouhanaie/actions/erlang@main
+        with:
+          - command: version

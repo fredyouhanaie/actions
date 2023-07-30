@@ -1,0 +1,16 @@
+# action.yml
+---
+name: 'Erlang/rebar3 runtime'
+
+description: 'Run erlang/rebar3 commands'
+
+inputs:
+  command:
+    description: 'rebar3 subcommand to run'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
